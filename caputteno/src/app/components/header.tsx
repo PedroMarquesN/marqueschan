@@ -2,6 +2,7 @@
 import {Saira_Stencil_One} from "next/font/google";
 import styled from "styled-components";
 import { PrimaryInputWSearchIcon } from "./PrimaryInput";
+import CartControl from "./CartControl";
 
 const sairaStencilOne = Saira_Stencil_One({
     weight: ['400'],
@@ -18,6 +19,15 @@ const TagHeader = styled.header`
     align-items: center;
     justify-content: space-between;
     padding: 20px 160px;
+
+    
+  >div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    
+    }
 `;
 
 const Logo = styled.a`
@@ -35,6 +45,7 @@ export const Header: React.FC<HeaderProps> = () => {
             <Logo className={sairaStencilOne.className}>Caputteno</Logo>
             <div>
                 <PrimaryInputWSearchIcon placeholder="Search for anything"/>
+                <CartControl />
             </div>
         </TagHeader>
     )
