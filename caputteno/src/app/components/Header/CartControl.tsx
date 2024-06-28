@@ -1,6 +1,6 @@
 import React from 'react'
-import { CartIcon } from '../assets/CartIcon'
-import useLocalStorage from '../hooks/useLocalStorage'
+import { CartIcon } from '../../assets/CartIcon'
+import useLocalStorage from '../../hooks/useLocalStorage'
 import styled from 'styled-components'
 
 
